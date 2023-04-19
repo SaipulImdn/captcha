@@ -1,7 +1,7 @@
 # gocaptcha
-一个简单的Go语言实现的验证码
 
-### 图片实例
+
+### contoh captcha
 
 ![image](https://raw.githubusercontent.com/lifei6671/gocaptcha/master/example/image_1.jpg)
 ![image](https://raw.githubusercontent.com/lifei6671/gocaptcha/master/example/image_2.jpg)
