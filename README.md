@@ -8,9 +8,9 @@
 ![image](https://raw.githubusercontent.com/lifei6671/gocaptcha/master/example/image_3.jpg)
 ![image](https://raw.githubusercontent.com/lifei6671/gocaptcha/master/example/image_4.jpg)
 
-## 简介
+## apa itu capthca
 
-基于Golang实现的图片验证码生成库，可以实现随机字母个数，随机直线，随机噪点等。可以设置任意多字体，每个验证码随机选一种字体展示。
+Captcha adalah suatu bentuk uji tantangan-tanggapan yang digunakan dalam komputasi untuk memastikan bahwa jawaban tidak dihasilkan oleh suatu komputer. 
 
 ## 实例
 
