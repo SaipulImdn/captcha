@@ -28,13 +28,13 @@ var (
 const txtChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
 
 const (
-	//图片格式
+	
 	ImageFormatPng ImageFormat = iota
 	ImageFormatJpeg
 	ImageFormatGif
 )
 const (
-	//验证码噪点强度
+
 	CaptchaComplexLower CaptchaComplex = iota
 	CaptchaComplexMedium
 	CaptchaComplexHigh
@@ -52,13 +52,13 @@ type CaptchaImage struct {
 	Error   error
 }
 
-//NewCaptchaImage 新建一个图片对象
-//Deprecated: 弃用
+//NewCaptchaImage
+//Deprecated: 
 func NewCaptchaImage(width int, height int, bgColor color.RGBA) *CaptchaImage {
 	return New(width, height, bgColor)
 }
 
-//New 新建一个图片对象
+//New
 func New(width int, height int, bgColor color.RGBA) *CaptchaImage {
 	m := image.NewNRGBA(image.Rect(0, 0, width, height))
 
@@ -71,7 +71,7 @@ func New(width int, height int, bgColor color.RGBA) *CaptchaImage {
 	}
 }
 
-//SaveImage 保存图片对象
+//SaveImage 
 func (captcha *CaptchaImage) SaveImage(w io.Writer, imageFormat ImageFormat) error {
 
 	if imageFormat == ImageFormatPng {
@@ -87,7 +87,7 @@ func (captcha *CaptchaImage) SaveImage(w io.Writer, imageFormat ImageFormat) err
 	return errors.New("not supported image format")
 }
 
-//DrawHollowLine 添加一个较粗的空白直线
+//DrawHollowLine 
 func (captcha *CaptchaImage) DrawHollowLine() *CaptchaImage {
 	if captcha.Error != nil {
 		return captcha
@@ -125,7 +125,7 @@ func (captcha *CaptchaImage) DrawHollowLine() *CaptchaImage {
 	return captcha
 }
 
-//DrawSineLine 画一条曲线.
+//DrawSineLine 
 func (captcha *CaptchaImage) DrawSineLine() *CaptchaImage {
 	if captcha.Error != nil {
 		return captcha
