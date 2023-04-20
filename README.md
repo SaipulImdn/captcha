@@ -11,3 +11,4 @@
 ## apa itu capthca
 
 Captcha adalah suatu bentuk uji tantangan-tanggapan yang digunakan dalam komputasi untuk memastikan bahwa jawaban tidak dihasilkan oleh suatu komputer. 
+Instagram: @SaipulImdn
