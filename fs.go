@@ -25,7 +25,7 @@ func FileSystem(fs embed.FS) error {
 	return nil
 }
 
-//获取指定目录下的所有文件，不进入下一级目录搜索，可以匹配后缀过滤。
+
 func ReadFonts(dirPth string, suffix string) (err error) {
 	fontFamily = fontFamily[:0]
 
