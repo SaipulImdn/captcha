@@ -47,7 +47,6 @@ func ReadFonts(dirPth string, suffix string) (err error) {
 	return nil
 }
 
-//获取所及字体.
 func RandFontFamily() (*truetype.Font, error) {
 	fontFile := fontFamily[r.Intn(len(fontFamily))]
 	fontBytes, err := ReadFile(fontFile)
@@ -63,7 +62,7 @@ func RandFontFamily() (*truetype.Font, error) {
 	return f, nil
 }
 
-//添加一个字体路径到字体库.
+
 func AddFontFamily(fontPath ...string) {
 	fontFamily = append(fontFamily, fontPath...)
 }
