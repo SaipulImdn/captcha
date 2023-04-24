@@ -139,7 +139,7 @@ func (captcha *CaptchaImage) DrawSineLine() *CaptchaImage {
 	//Y轴方向偏移量
 	b := Random(int64(-captcha.height/4), int64(captcha.height/4))
 
-	//X轴方向偏移量
+
 	f := Random(int64(-captcha.height/4), int64(captcha.height/4))
 	// 周期
 	var t float64 = 0
@@ -150,7 +150,6 @@ func (captcha *CaptchaImage) DrawSineLine() *CaptchaImage {
 	}
 	w := (2 * math.Pi) / t
 
-	// 曲线横坐标起始位置
 	px1 := 0
 	px2 := int(Random(int64(float64(captcha.width)*0.8), int64(captcha.width)))
 
