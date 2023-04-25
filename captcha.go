@@ -198,7 +198,7 @@ func (captcha *CaptchaImage) DrawLine(num int) *CaptchaImage {
 	return captcha
 }
 
-//drawBeeline 画直线.
+//drawBeeline 
 func (captcha *CaptchaImage) drawBeeline(point1 Point, point2 Point, lineColor color.RGBA) *CaptchaImage {
 	if captcha.Error != nil {
 		return captcha
@@ -214,7 +214,7 @@ func (captcha *CaptchaImage) drawBeeline(point1 Point, point2 Point, lineColor c
 		sy = -1
 	}
 	err := dx - dy
-	//循环的画点直到到达结束坐标停止.
+	
 	for {
 		captcha.nrgba.Set(point1.X, point1.Y, lineColor)
 		captcha.nrgba.Set(point1.X+1, point1.Y, lineColor)
