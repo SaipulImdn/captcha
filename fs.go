@@ -67,7 +67,7 @@ func AddFontFamily(fontPath ...string) {
 	fontFamily = append(fontFamily, fontPath...)
 }
 
-//ReadFile 读取文件，优先从设置的文件系统中读取，失败后从内置文件系统读取，失败后从磁盘读取.
+//ReadFile
 func ReadFile(name string) ([]byte, error) {
 	if ioFS != nil {
 		b, err := fs.ReadFile(ioFS, name)
