@@ -34,12 +34,12 @@ func ReadFonts(dirPth string, suffix string) (err error) {
 	if err != nil {
 		return err
 	}
-	suffix = strings.ToUpper(suffix) //忽略后缀匹配的大小写
+	suffix = strings.ToUpper(suffix) 
 	for _, fi := range dir {
-		if fi.IsDir() { // 忽略目录
+		if fi.IsDir() { 
 			continue
 		}
-		if strings.HasSuffix(strings.ToUpper(fi.Name()), suffix) { //匹配文件
+		if strings.HasSuffix(strings.ToUpper(fi.Name()), suffix) { 
 			fontFamily = append(fontFamily, filepath.Join(dirPth, fi.Name()))
 		}
 	}
