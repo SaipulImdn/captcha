@@ -169,7 +169,7 @@ func (captcha *CaptchaImage) DrawSineLine() *CaptchaImage {
 	return captcha
 }
 
-//DrawLine 画一条直线.
+//DrawLine 
 func (captcha *CaptchaImage) DrawLine(num int) *CaptchaImage {
 	if captcha.Error != nil {
 		return captcha
@@ -252,7 +252,7 @@ func (captcha *CaptchaImage) DrawBorder(borderColor color.RGBA) *CaptchaImage {
 	return captcha
 }
 
-//DrawNoise 画噪点.
+//DrawNoise 
 func (captcha *CaptchaImage) DrawNoise(complex CaptchaComplex) *CaptchaImage {
 	if captcha.Error != nil {
 		return captcha
