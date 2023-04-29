@@ -335,7 +335,7 @@ func (captcha *CaptchaImage) DrawTextNoise(complex CaptchaComplex) *CaptchaImage
 	return captcha
 }
 
-//DrawText 写字.
+//DrawText 
 func (captcha *CaptchaImage) DrawText(text string) *CaptchaImage {
 	if captcha.Error != nil {
 		return captcha
