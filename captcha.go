@@ -136,12 +136,12 @@ func (captcha *CaptchaImage) DrawSineLine() *CaptchaImage {
 	//振幅
 	a := r.Intn(captcha.height / 2)
 
-	//Y轴方向偏移量
+	
 	b := Random(int64(-captcha.height/4), int64(captcha.height/4))
 
 
 	f := Random(int64(-captcha.height/4), int64(captcha.height/4))
-	// 周期
+	
 	var t float64 = 0
 	if captcha.height > captcha.width/2 {
 		t = Random(int64(captcha.width/2), int64(captcha.height))
