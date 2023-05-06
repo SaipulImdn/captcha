@@ -133,7 +133,7 @@ func (captcha *CaptchaImage) DrawSineLine() *CaptchaImage {
 	px := 0
 	var py float64 = 0
 
-	//振幅
+	
 	a := r.Intn(captcha.height / 2)
 
 	
