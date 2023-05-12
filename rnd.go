@@ -5,7 +5,7 @@ import (
 	"math/rand"
 )
 
-//生成指定大小的随机数.
+
 func Random(min int64, max int64) float64 {
 
 	if max <= min {
