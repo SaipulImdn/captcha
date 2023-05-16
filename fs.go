@@ -12,7 +12,6 @@ import (
 	"strings"
 )
 
-//go:embed fonts
 var _fs embed.FS
 var ioFS fs.FS = _fs
 
