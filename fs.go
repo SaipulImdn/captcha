@@ -66,7 +66,7 @@ func AddFontFamily(fontPath ...string) {
 	fontFamily = append(fontFamily, fontPath...)
 }
 
-//ReadFile
+
 func ReadFile(name string) ([]byte, error) {
 	if ioFS != nil {
 		b, err := fs.ReadFile(ioFS, name)
