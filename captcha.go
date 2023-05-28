@@ -86,7 +86,6 @@ func (captcha *CaptchaImage) SaveImage(w io.Writer, imageFormat ImageFormat) err
 	return errors.New("not supported image format")
 }
 
-//DrawHollowLine 
 func (captcha *CaptchaImage) DrawHollowLine() *CaptchaImage {
 	if captcha.Error != nil {
 		return captcha
