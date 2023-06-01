@@ -123,7 +123,6 @@ func (captcha *CaptchaImage) DrawHollowLine() *CaptchaImage {
 	return captcha
 }
 
-//DrawSineLine 
 func (captcha *CaptchaImage) DrawSineLine() *CaptchaImage {
 	if captcha.Error != nil {
 		return captcha
