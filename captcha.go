@@ -57,7 +57,7 @@ func NewCaptchaImage(width int, height int, bgColor color.RGBA) *CaptchaImage {
 	return New(width, height, bgColor)
 }
 
-//New
+
 func New(width int, height int, bgColor color.RGBA) *CaptchaImage {
 	m := image.NewNRGBA(image.Rect(0, 0, width, height))
 
