@@ -52,7 +52,6 @@ type CaptchaImage struct {
 	Error   error
 }
 
-//Deprecated: 
 func NewCaptchaImage(width int, height int, bgColor color.RGBA) *CaptchaImage {
 	return New(width, height, bgColor)
 }
