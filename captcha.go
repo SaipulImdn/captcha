@@ -69,7 +69,6 @@ func New(width int, height int, bgColor color.RGBA) *CaptchaImage {
 	}
 }
 
-//SaveImage 
 func (captcha *CaptchaImage) SaveImage(w io.Writer, imageFormat ImageFormat) error {
 
 	if imageFormat == ImageFormatPng {
