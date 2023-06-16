@@ -164,7 +164,6 @@ func (captcha *CaptchaImage) DrawSineLine() *CaptchaImage {
 	return captcha
 }
 
-//DrawLine 
 func (captcha *CaptchaImage) DrawLine(num int) *CaptchaImage {
 	if captcha.Error != nil {
 		return captcha
