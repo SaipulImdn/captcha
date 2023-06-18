@@ -192,7 +192,6 @@ func (captcha *CaptchaImage) DrawLine(num int) *CaptchaImage {
 	return captcha
 }
 
-//drawBeeline 
 func (captcha *CaptchaImage) drawBeeline(point1 Point, point2 Point, lineColor color.RGBA) *CaptchaImage {
 	if captcha.Error != nil {
 		return captcha
