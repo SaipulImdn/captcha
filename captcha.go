@@ -229,7 +229,6 @@ func (captcha *CaptchaImage) drawBeeline(point1 Point, point2 Point, lineColor c
 	}
 }
 
-//DrawBorder 
 func (captcha *CaptchaImage) DrawBorder(borderColor color.RGBA) *CaptchaImage {
 	if captcha.Error != nil {
 		return captcha
