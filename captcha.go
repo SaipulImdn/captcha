@@ -366,7 +366,6 @@ func (captcha *CaptchaImage) DrawText(text string) *CaptchaImage {
 			return captcha
 		}
 		//pt.Y += c.PointToFixed(*size * *spacing)
-		//pt.X += c.PointToFixed(*size);
 	}
 	return captcha
 
