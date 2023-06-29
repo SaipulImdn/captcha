@@ -244,7 +244,6 @@ func (captcha *CaptchaImage) DrawBorder(borderColor color.RGBA) *CaptchaImage {
 	return captcha
 }
 
-//DrawNoise 
 func (captcha *CaptchaImage) DrawNoise(complex CaptchaComplex) *CaptchaImage {
 	if captcha.Error != nil {
 		return captcha
