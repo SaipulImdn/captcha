@@ -272,7 +272,7 @@ func (captcha *CaptchaImage) DrawNoise(complex CaptchaComplex) *CaptchaImage {
 	return captcha
 }
 
-//DrawTextNoise
+
 func (captcha *CaptchaImage) DrawTextNoise(complex CaptchaComplex) *CaptchaImage {
 	if captcha.Error != nil {
 		return captcha
