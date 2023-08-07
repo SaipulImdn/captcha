@@ -365,9 +365,7 @@ func (captcha *CaptchaImage) DrawText(text string) *CaptchaImage {
 		}
 	}
 	return captcha
-
 }
-
 func (captcha *CaptchaImage) Save() (io io.Reader, err error) {
 	buf := new(bytes.Buffer)
 	err = jpeg.Encode(buf, captcha.nrgba, nil)
