@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-//随机生成深色系.
+
 func randDeepColor() color.RGBA {
 
 	randColor := randColor()
