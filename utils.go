@@ -22,7 +22,6 @@ func randDeepColor() color.RGBA {
 	return color.RGBA{R: uint8(red), G: uint8(green), B: uint8(blue), A: uint8(255)}
 }
 
-//随机生成浅色.
 func RandLightColor() color.RGBA {
 
 	red := r.Intn(55) + 200
@@ -32,7 +31,6 @@ func RandLightColor() color.RGBA {
 	return color.RGBA{R: uint8(red), G: uint8(green), B: uint8(blue), A: uint8(255)}
 }
 
-//生成随机颜色.
 func randColor() color.RGBA {
 
 	red := r.Intn(255)
@@ -49,7 +47,6 @@ func randColor() color.RGBA {
 	return color.RGBA{R: uint8(red), G: uint8(green), B: uint8(blue), A: uint8(255)}
 }
 
-//生成随机字体.
 func RandText(num int) string {
 	textNum := len(txtChars)
 	text := ""
@@ -61,7 +58,6 @@ func RandText(num int) string {
 	return text
 }
 
-// 颜色代码转换为RGB
 //input int
 //output int red, green, blue.
 func ColorToRGB(colorVal int) color.RGBA {
