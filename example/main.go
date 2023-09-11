@@ -16,7 +16,7 @@ const (
 func main() {
 	http.HandleFunc("/", Index)
 	http.HandleFunc("/get/", Get)
-	fmt.Println("服务已启动 -> http://127.0.0.1:8800")
+	fmt.Println("started -> http://127.0.0.1:8800")
 	err := http.ListenAndServe(":8800", nil)
 	if err != nil {
 		log.Fatal(err)
