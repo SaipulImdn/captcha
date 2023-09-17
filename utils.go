@@ -58,8 +58,7 @@ func RandText(num int) string {
 	return text
 }
 
-//input int
-//output int red, green, blue.
+
 func ColorToRGB(colorVal int) color.RGBA {
 
 	red := colorVal >> 16
