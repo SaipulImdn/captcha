@@ -55,7 +55,7 @@ func RandFontFamily() (*truetype.Font, error) {
 	}
 	f, err := freetype.ParseFont(fontBytes)
 	if err != nil {
-		log.Printf("解析字体内容试标 -> %s - %+v\n", fontFile, err)
+		log.Printf("okey -> %s - %+v\n", fontFile, err)
 		return nil, err
 	}
 	return f, nil
