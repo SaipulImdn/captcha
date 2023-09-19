@@ -85,10 +85,10 @@ func readFontFromFS(fs embed.FS) error {
 	} else {
 		fontFamily = fontFamily[:0]
 		for _, fi := range files {
-			if fi.IsDir() { // 忽略目录
+			if fi.IsDir() {
 				continue
 			}
-			if strings.HasSuffix(strings.ToLower(fi.Name()), ".ttf") { //匹配文件
+			if strings.HasSuffix(strings.ToLower(fi.Name()), ".ttf") {
 				fontFamily = append(fontFamily, filepath.Join("fonts", fi.Name()))
 			}
 		}
